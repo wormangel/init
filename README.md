@@ -17,8 +17,8 @@ My setup checklist for new dev machines
 ## init 2 - shell
 
 1- Install [iTerm2](https://www.iterm2.com/)
-* Options > Preferences > Profiles > Default > Keys > **⌥←**  > Send Escape Sequence > b
-* Options > Preferences > Profiles > Default > Keys > **⌥←**  > Send Escape Sequence > f
+* Options > Preferences > Profiles > Default > Keys > `⌥←`  > Send Escape Sequence > `b`
+* Options > Preferences > Profiles > Default > Keys > `⌥←`  > Send Escape Sequence > `f`
 * Options > Preferences > Profiles > Default > Terminal > check **Unlimited scrollback**
 * Options > Preferences > Profiles > Default > Terminal > check **Enable mouse reporting** and **Report mouse wheel events**
 
