@@ -40,6 +40,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 1- Install [Atom](https://atom.io/)
 
 2- Install [iStats Menus 5](https://bjango.com/mac/istatmenus/)
+* Date & Time > uncheck **Show date and time in the menubar**
+* Energy Save > uncheck **Show battery status in menubar**
 * File > Import Settings > ```istats.ismp```
 
 ## init 4 - osx_tweaks
