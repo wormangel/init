@@ -56,7 +56,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 * Automator > Create new service (receives selected no `input`, `any app`, launches `Start Screen Saver`) > Save as `Lock Screen`
 * System Preferences > Keyboard > Shortcuts > Services > `Lock Screen` > bind to `⌘⌥^L`
 
-3- Keyboard > Text > disable **Correct spelling automatically** and **Capitalize words automatically**
+5- Keyboard > Text > disable **Correct spelling automatically** and **Capitalize words automatically**
+
+6- Disable Chrome gesture navigation: 
+
+```defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE```
 
 ## init 5 - rest
 
