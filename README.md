@@ -62,6 +62,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ```defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE```
 
+7- Show Hidden files in Finder
+
+```defaults write com.apple.finder AppleShowAllFiles YES```
+
 ## init 5 - rest
 
 1- Install [Telegram](https://telegram.org/)
