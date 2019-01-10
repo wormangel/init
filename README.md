@@ -9,11 +9,14 @@ My setup checklist for new dev machines
 
 2- Install [Google Chrome](https://www.google.com/chrome)
 * Set as default browser
+* Install extensions: [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg), [Copy All URLs](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk)
 
-3- Displays > Resolution > More Space
+3- Install [LastPass](https://lastpass.com)
+
+4- Displays > Resolution > More Space
 * Needs to be done both **before** and **after** connecting to external displays
 
-4- Keyboard > Input Sources > add **U.S. International - PC** > remove others
+5- Keyboard > Input Sources > add **U.S. International - PC** > remove others
 
 ## init 2 - shell
 
@@ -34,7 +37,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 * If needed, set it as the default shell (should be done automatically though): ```chsh -s /bin/zsh```
 
 4- Install [Homebrew](https://brew.sh/): ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-* ```brew install python3 jq z maven```
+* ```brew install python3 jq z```
 
 ## init 3 - software_essentials
 
@@ -63,6 +66,31 @@ Tweak the following Mac settings below, as you'll be using iStats' ones:
 
 6- Copy `.zshrc` from this repo to the home and source it
 
-## init 5 - rest
+## init 5 - other_dev
+
+### Generate new SSH key for the machine 
+1- Generate SSH key with `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+2- Copy the `.ssh/config` file here and put it in your `~/.ssh` 
+3- Save the generate key
+
+```
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_rsa
+```
+
+### Dev software
+1- Install [Postman](https://www.getpostman.com/)
+2- Install [Postgres app](https://postgresapp.com)
+3- Install [pgAdmin](https://www.pgadmin.org)
+4- Install [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
+5- Install [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+6- `brew install maven`
+
+## init 6 - rest
 
 1- Install [Telegram](https://telegram.org/)
+2- Install [Spotify](https://spotify.com)
+3- Install [Dropbox](https://www.dropbox.com/), setup Selective Sync as needed
+
+
+
