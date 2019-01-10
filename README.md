@@ -70,7 +70,9 @@ Tweak the following Mac settings below, as you'll be using iStats' ones:
 
 ### Generate new SSH key for the machine 
 1- Generate SSH key with `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
-2- Copy the `.ssh/config` file here and put it in your `~/.ssh` 
+
+2- Copy the `.ssh/config` file here and put it in your `~/.ssh`
+
 3- Save the generate key
 
 ```
@@ -80,10 +82,15 @@ ssh-add -K ~/.ssh/id_rsa
 
 ### Dev software
 1- Install [Postman](https://www.getpostman.com/)
+
 2- Install [Postgres app](https://postgresapp.com)
+
 3- Install [pgAdmin](https://www.pgadmin.org)
+
 4- Install [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
+
 5- Install [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
 6- `brew install maven`
 
 ## init 6 - rest
