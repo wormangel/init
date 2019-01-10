@@ -73,12 +73,14 @@ Tweak the following Mac settings below, as you'll be using iStats' ones:
 
 2- Copy the `.ssh/config` file here and put it in your `~/.ssh`
 
-3- Save the generate key
+3- Save the generated key
 
 ```
 eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/id_rsa
 ```
+
+4- Add the key to Github and wherever else
 
 ### Dev software
 1- Install [Postman](https://www.getpostman.com/)
