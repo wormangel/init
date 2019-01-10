@@ -94,7 +94,7 @@ ssh-add -K ~/.ssh/id_rsa
 
 5- Install [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-6- `brew install maven`
+6- `brew install hub maven`
 
 7- Install [Node.js/npm](https://nodejs.org/en/)
 
