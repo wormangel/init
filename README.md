@@ -95,6 +95,8 @@ ssh-add -K ~/.ssh/id_rsa
 
 6- `brew install maven`
 
+7- Install [Node.js/npm](https://nodejs.org/en/)
+
 ## init 6 - rest
 
 1- Install [Telegram](https://telegram.org/)
