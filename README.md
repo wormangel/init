@@ -25,6 +25,7 @@ My setup checklist for new dev machines
 * Options > Preferences > Profiles > Default > Keys > `⌥←`  > Send Escape Sequence > `f`
 * Options > Preferences > Profiles > Default > Terminal > check **Unlimited scrollback**
 * Options > Preferences > Profiles > Default > Terminal > check **Enable mouse reporting** and **Report mouse wheel events**
+* Options > Advanced > Set **Scroll wheel sends arrow keys when in alternate screen mode** = `true`
 
 2- Install XCode command-line tools: ```xcode-select --install```
 
