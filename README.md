@@ -96,7 +96,9 @@ ssh-add -K ~/.ssh/id_rsa
 ## init 6 - rest
 
 1- Install [Telegram](https://telegram.org/)
+
 2- Install [Spotify](https://spotify.com)
+
 3- Install [Dropbox](https://www.dropbox.com/), setup Selective Sync as needed
 
 
