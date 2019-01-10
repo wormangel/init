@@ -11,6 +11,7 @@ My setup checklist for new dev machines
 * Set as default browser
 
 3- Displays > Resolution > More Space
+* Needs to be done both **before** and **after** connecting to external displays
 
 4- Keyboard > Input Sources > add **U.S. International - PC** > remove others
 
@@ -22,7 +23,9 @@ My setup checklist for new dev machines
 * Options > Preferences > Profiles > Default > Terminal > check **Unlimited scrollback**
 * Options > Preferences > Profiles > Default > Terminal > check **Enable mouse reporting** and **Report mouse wheel events**
 
-2- Install [oh-my-zsh](http://ohmyz.sh/)
+2- Install XCode command-line tools: ```xcode-select --install```
+
+3- Install [oh-my-zsh](http://ohmyz.sh/)
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -30,19 +33,19 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 * If needed, set it as the default shell (should be done automatically though): ```chsh -s /bin/zsh```
 
-3- Install XCode command-line tools: ```xcode-select --install```
-
 4- Install [Homebrew](https://brew.sh/): ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-* ```brew install python3 jq```
+* ```brew install python3 jq z```
 
 ## init 3 - software_essentials
 
 1- Install [Atom](https://atom.io/)
 
 2- Install [iStats Menus 5](https://bjango.com/mac/istatmenus/)
+* File > Import Settings > ```istats.ismp```
+
+Tweak the following Mac settings below, as you'll be using iStats' ones:
 * Date & Time > uncheck **Show date and time in the menubar**
 * Energy Save > uncheck **Show battery status in menubar**
-* File > Import Settings > ```istats.ismp```
 
 ## init 4 - osx_tweaks
 
@@ -50,21 +53,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 2- Security & Privacy > General > Require password **immediately** after sleep or screen saver begins
 
-3- Keychain Access > Settings > Show keychain status in menubar
+3- Keychain Access > Settings > Show keychain status in menubar **DEPRECATED ?**
 
 4- Setup shortcut to lock screen with keyboard
-* Automator > Create new service (receives selected no `input`, `any app`, launches `Start Screen Saver`) > Save as `Lock Screen`
+* Automator > Create new **Quick action** (receives `no input`, `any app`, launches `Start Screen Saver`) > Save as `Lock Screen`
 * System Preferences > Keyboard > Shortcuts > Services > `Lock Screen` > bind to `⌘⌥^L`
 
 5- Keyboard > Text > disable **Correct spelling automatically** and **Capitalize words automatically**
 
-6- Disable Chrome gesture navigation: 
-
-```defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE```
-
-7- Show Hidden files in Finder
-
-```defaults write com.apple.finder AppleShowAllFiles YES```
+6- Copy `.zshrc` from this repo to the home and source it
 
 ## init 5 - rest
 
