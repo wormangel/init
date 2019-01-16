@@ -38,7 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 * If needed, set it as the default shell (should be done automatically though): ```chsh -s /bin/zsh```
 
 4- Install [Homebrew](https://brew.sh/): ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-* ```brew install python3 jq z```
+* ```brew install python3 jq z imagemagick```
 
 ## init 3 - software_essentials
 
