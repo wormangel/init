@@ -87,8 +87,8 @@ source ~/.zalandorc
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin:/usr/local/opt/go/libexec/bin"
-export GOPATH=$HOME/workspace/go
+export PATH="$PATH:$HOME/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin/"
+export GOPATH=$HOME/workspace/cat/go
 
 # Disable Chrome gesture navigation
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
