@@ -1,6 +1,10 @@
 # init
 My setup checklist for new dev machines
 
+## TODO
+
+Replace manual installation of apps (e.g. GUI apps like Chrome) with `homebrew cask`
+
 ## init 1 - bare_minimum
 0- Make sure to have admin rights on the machine
 
