@@ -5,7 +5,10 @@ My setup checklist for new dev machines
 
 Replace manual installation of apps (e.g. GUI apps like Chrome) with `homebrew cask`
 
-`brew cask install spectacle atom telegram spotify google-chat intellij-idea postgres pgadmin4 postman docker istat-menus dropbox`
+```
+brew tap homebrew/cask-versions
+brew cask install java8 spectacle atom telegram spotify google-chat intellij-idea postgres pgadmin4 postman docker istat-menus dropbox
+```
 
 ## init 1 - bare_minimum
 0- Make sure to have admin rights on the machine
