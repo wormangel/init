@@ -90,7 +90,7 @@ source ~/.zalandorc
 export PATH="$PATH:$HOME/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin/"
 export GOPATH=$HOME/workspace/cat/go
 
-# Disable Chrome gesture navigation
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
-# Show Hidden files in Finder
-defaults write com.apple.finder AppleShowAllFiles YES
+RPROMPT="[%{$fg_bold[cyan]%}%D{%Y/%m/%d} | %{$fg_bold[yellow]%}%*%{$reset_color%}]"
+
+free-port() { kill "$(lsof -t -i :$1)"; }
+kill-port() { kill -kill "$(lsof -t -i :$1)"; }
