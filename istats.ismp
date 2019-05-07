@@ -3,35 +3,276 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<real>743</real>
+	<string>1090</string>
 	<key>preferences</key>
 	<dict>
 		<key>Battery_MenubarMode</key>
-		<string>2,0</string>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>2</string>
+				<key>uuid</key>
+				<string>D2052B7A-CAD8-41F3-9CCC-4CCCAA89517C</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>0</string>
+				<key>uuid</key>
+				<string>DC164418-2DDB-4E2D-9755-BE42D7B61CD9</string>
+			</dict>
+		</array>
 		<key>CombinedMenubarDisplayMode</key>
-		<string>1,2,3,4,5,6,7</string>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>1</string>
+				<key>uuid</key>
+				<string>930EA761-78D3-47A3-9114-969FEA0475BC</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>2</string>
+				<key>uuid</key>
+				<string>CB426909-065B-4757-A04E-520DBEC5EF35</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>3</string>
+				<key>uuid</key>
+				<string>D5F0DC33-F0AF-49A8-A6D8-5A0EE949DB7E</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>4</string>
+				<key>uuid</key>
+				<string>27684ACF-5D21-4ED3-A5F2-D77152757FFD</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>5</string>
+				<key>uuid</key>
+				<string>F7F23427-6EF1-4B3D-BC8D-7702F0E8E3ED</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>6</string>
+				<key>uuid</key>
+				<string>FC62B57D-EA61-4AC3-8F38-395A0419B272</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>7</string>
+				<key>uuid</key>
+				<string>F701F2EE-9643-4E8C-A60F-260AF67F53C5</string>
+			</dict>
+		</array>
 		<key>Diagnostics_Enabled</key>
+		<integer>0</integer>
+		<key>Disks_MenubarItems</key>
+		<array>
+			<dict>
+				<key>boot</key>
+				<true/>
+				<key>key</key>
+				<string>212B72A8-93E3-4123-9295-DB4C05B44364</string>
+				<key>name</key>
+				<string>Macintosh HD</string>
+			</dict>
+		</array>
+		<key>FanControl_Sets</key>
+		<array>
+			<dict>
+				<key>model</key>
+				<string>MacBookPro12,1</string>
+				<key>name</key>
+				<string>Medium</string>
+				<key>speeds</key>
+				<array/>
+				<key>uuid</key>
+				<string>76CF6B66-D025-4625-A4D7-8939902A52AB</string>
+			</dict>
+			<dict>
+				<key>model</key>
+				<string>MacBookPro12,1</string>
+				<key>name</key>
+				<string>High</string>
+				<key>speeds</key>
+				<array/>
+				<key>uuid</key>
+				<string>7A15D2EA-1F7A-45FB-89AF-FF0A804FB7EF</string>
+			</dict>
+		</array>
+		<key>Migrated_6.0</key>
+		<true/>
+		<key>Migrated_6.22</key>
+		<true/>
+		<key>Notifications-Items</key>
+		<array>
+			<dict>
+				<key>enabled</key>
+				<true/>
+				<key>notification-type</key>
+				<string>1</string>
+				<key>rule-type</key>
+				<string>18</string>
+				<key>uuid</key>
+				<string>AAD6C40E-B770-4F70-9C07-008474DDA885</string>
+				<key>value</key>
+				<string>978332400</string>
+			</dict>
+			<dict>
+				<key>enabled</key>
+				<true/>
+				<key>notification-type</key>
+				<string>1</string>
+				<key>rule-type</key>
+				<string>17</string>
+				<key>uuid</key>
+				<string>F6F5C0EF-3B09-45F3-BAF7-BC8332D287EA</string>
+				<key>value</key>
+				<string>1.00</string>
+			</dict>
+			<dict>
+				<key>enabled</key>
+				<true/>
+				<key>notification-type</key>
+				<string>0</string>
+				<key>rule-type</key>
+				<string>14</string>
+				<key>uuid</key>
+				<string>CA0E7C2D-C85A-43B2-B51E-352D2CE4577E</string>
+				<key>value</key>
+				<string>10.00</string>
+			</dict>
+			<dict>
+				<key>enabled</key>
+				<true/>
+				<key>notification-type</key>
+				<string>1</string>
+				<key>rule-type</key>
+				<string>20</string>
+				<key>uuid</key>
+				<string>134542D3-EB46-4F77-B137-A68F16E57E91</string>
+				<key>value</key>
+				<string>10.00</string>
+			</dict>
+		</array>
+		<key>Sensors_TemperatureMode</key>
 		<integer>0</integer>
 		<key>StatusItems-Order</key>
 		<array>
+			<integer>9</integer>
+			<integer>7</integer>
 			<integer>1</integer>
 			<integer>2</integer>
 			<integer>3</integer>
 			<integer>4</integer>
 			<integer>5</integer>
 			<integer>6</integer>
-			<integer>7</integer>
 		</array>
 		<key>Time_Cities</key>
 		<array>
-			<real>3403642</real>
-			<real>5128581</real>
-			<real>-4</real>
+			<dict>
+				<key>city</key>
+				<string>Campina Grande</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string>Brazil</string>
+				<key>identifier</key>
+				<real>3403642</real>
+				<key>latitude</key>
+				<real>-7.2305599999999997</real>
+				<key>longitude</key>
+				<real>-35.88111</real>
+				<key>population</key>
+				<real>348936</real>
+				<key>state</key>
+				<string>Paraíba</string>
+				<key>timezone</key>
+				<string>America/Fortaleza</string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>New York City</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string>United States</string>
+				<key>identifier</key>
+				<real>5128581</real>
+				<key>latitude</key>
+				<real>40.714269999999999</real>
+				<key>longitude</key>
+				<real>-74.005970000000005</real>
+				<key>population</key>
+				<real>8175133</real>
+				<key>state</key>
+				<string>New York</string>
+				<key>timezone</key>
+				<string>America/New_York</string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>Pacific Time</string>
+				<key>city_plain</key>
+				<string>PST</string>
+				<key>country</key>
+				<string>United States</string>
+				<key>identifier</key>
+				<real>-4</real>
+				<key>latitude</key>
+				<real>34.052230000000002</real>
+				<key>longitude</key>
+				<real>-118.24368</real>
+				<key>population</key>
+				<real>99999999</real>
+				<key>state</key>
+				<string></string>
+				<key>timezone</key>
+				<string>America/Los_Angeles</string>
+			</dict>
 		</array>
 		<key>Time_DropdownShowMoon</key>
 		<integer>0</integer>
+		<key>Time_MenubarFormat</key>
+		<array>
+			<dict>
+				<key>format</key>
+				<array>
+					<array>
+						<string>EE</string>
+						<string>' '</string>
+						<string>hh</string>
+						<string>:</string>
+						<string>mm</string>
+					</array>
+				</array>
+			</dict>
+		</array>
+		<key>Weather_PressureUnits</key>
+		<integer>0</integer>
+		<key>Weather_RainUnits</key>
+		<integer>1</integer>
+		<key>Weather_TemperatureUnits</key>
+		<integer>1</integer>
+		<key>Weather_TimeUnits</key>
+		<integer>0</integer>
+		<key>Weather_VisibilityUnits</key>
+		<integer>1</integer>
+		<key>Weather_WindUnits</key>
+		<integer>2</integer>
+		<key>Zarya-TLE</key>
+		<dict>
+			<key>time</key>
+			<real>1557234638.8569911</real>
+			<key>tle</key>
+			<string>ISS (ZARYA)             
+1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991
+2 25544  51.6429 354.9058 0004630 308.2748  50.7575 15.53168972152956</string>
+		</dict>
 	</dict>
 	<key>version</key>
-	<real>5.320000171661377</real>
+	<string>6.31</string>
 </dict>
 </plist>
