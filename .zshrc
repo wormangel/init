@@ -88,7 +88,7 @@ source ~/.zalandorc
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin/"
-export GOPATH=$HOME/workspace/cat/go
+export GOPATH=$HOME/workspace/go
 
 RPROMPT="[%{$fg_bold[cyan]%}%D{%Y/%m/%d} | %{$fg_bold[yellow]%}%*%{$reset_color%}]"
 
