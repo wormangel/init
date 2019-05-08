@@ -36,7 +36,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Generate SSH
 echo "🔶 Generating new SSH key..."
 echo
-ssh-keygen -t rsa -b 4096 -C "wormangel@gmail.com"
+ssh-keygen -t rsa -b 4096
 eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/id_rsa
 
@@ -99,6 +99,9 @@ echo "  ⚙️  Preferences > Launch Spectacle at Login"
 echo " 🌕 Google Chrome:"
 echo "  ⚙️  Set as default browser"
 echo "  ⚙️  Login to Chrome to synchronize extensions"
+echo "    · LastPass > https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd"
+echo "    · Cluster > https://chrome.google.com/webstore/detail/cluster-window-tab-manage/aadahadfdmiibmdhfmpbeeebejmjnkef"
+echo "    · uBlock Origin > https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
 echo "    · EditThisCookie > https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg"
 echo "    · Copy All URLs > https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk"
 echo "    · React Dev Tools > https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi"
