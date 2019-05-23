@@ -92,6 +92,11 @@ echo "This step will:"
 echo " * Copy .vimrc to home"
 echo " * Copy .zshrc to home"
 echo " * Copy iStats settings to home"
+echo " * Copy iTerm2 profiles to the appropriate place"
+echo "   * NOTE: iTerm2 preferences need to be loaded manually, check the final instructions."
+echo
+cp $INITDIR/iTerm2/profiles.json ~/Library/Application Support/iTerm2/DynamicProfiles
+
 echo
 cp $INITDIR/.zshrc ~/
 cp $INITDIR/.vimrc ~/
@@ -132,11 +137,7 @@ echo "    · React Dev Tools > https://chrome.google.com/webstore/detail/react-d
 echo "    · Redux Dev Tools > https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd"
 echo
 echo " 💻 iTerm2:"
-echo "  ⚙️  Options > Preferences > Profiles > Default > Keys > ⌥← > Send Escape Sequence > b"
-echo "  ⚙️  Options > Preferences > Profiles > Default > Keys > ⌥→ > Send Escape Sequence > f"
-echo "  ⚙️  Options > Preferences > Profiles > Default > Terminal > check Unlimited scrollback"
-echo "  ⚙️  Options > Preferences > Profiles > Default > Terminal > check Enable mouse reporting and Report mouse wheel events"
-echo "  ⚙️  Options > Advanced > Set Scroll wheel sends arrow keys when in alternate screen mode = true"
+echo "  ⚙️  Options > Preferences > General > Load preferences from a custom folder or URL > $INITDIR/iTerm2"
 echo
 echo " 🌡  iStats Menus 6:"
 echo "  ⚙️  iStats Menus - Registration - Key can be found on Gmail under 'istats order'"
