@@ -95,13 +95,11 @@ echo " * Copy iStats settings to home"
 echo " * Copy iTerm2 profiles to the appropriate place"
 echo "   * NOTE: iTerm2 preferences need to be loaded manually, check the final instructions."
 echo
-mkdir -p ~/Library/Application Support/iTerm2/DynamicProfiles
-cp $INITDIR/iTerm2/profiles.json ~/Library/Application Support/iTerm2/DynamicProfiles
-
-echo
 cp $INITDIR/.zshrc ~/
 cp $INITDIR/.vimrc ~/
 cp $INITDIR/istats.ismp ~/
+mkdir -p ~/Library/Application Support/iTerm2/DynamicProfiles
+cp $INITDIR/iTerm2/profiles.json ~/Library/Application Support/iTerm2/DynamicProfiles
 
 
 echo "🎉 All done!"
