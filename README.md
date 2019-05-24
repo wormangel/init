@@ -13,14 +13,15 @@ The script kickstarts the machine by installing/configuring:
 
 * Shell (iTerm2 + zsh + oh-my-zsh)
 * XCode command-line tools (mostly because of git)
-* Generation of new SSH key (using my personal e-mail)
+* Generation of new SSH key
 * Homebrew (and all software from them on using formulas and casks for a tidy managed system 😍)
-* Essential desktop apps: `google-chrome spectacle atom telegram spotify istat-menus dropbox`
-  * Commented out dev desktop apps: `java8 postgres pgadmin4 postman docker intellij-idea`
+* Essential desktop apps: `google-chrome spectacle atom telegram spotify istat-menus dropbox gimp xquartz`
+* Dev desktop apps: `postgres pgadmin4 postman docker intellij-idea`
 * Essential shell apps: `python3 jq z imagemagick icdiff`
-  * Commented out dev shell apps: `go glide node hub maven awscli bash`
-* Atom packages
+* Dev shell apps: `go glide node hub maven awscli bash mono`
+* Atom packages (`duplicate-removal plist-converter pretty-json sort-lines split-diff`)
 * Automatic copying of software dotfiles `.vimrc`
+* Automatic setup of iTerm2 preferences and profiles
 * Automatic copying and sourcing of my custom dotfiles `.zshrc`
 * Automatic setup of iStats Menus 6
 
