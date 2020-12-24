@@ -9,16 +9,22 @@ You need admin rights on the machine.
 * Run `./kickstart.sh`
 
 ## Features
+![Casks](/casks.png)
+
 The script kickstarts the machine by installing/configuring:
 
 * Shell (iTerm2 + zsh + oh-my-zsh)
 * XCode command-line tools (mostly because of git)
 * Generation of new SSH key
 * Homebrew (and all software from them on using formulas and casks for a tidy managed system 😍)
-* Essential desktop apps: `google-chrome spectacle atom telegram spotify istat-menus dropbox gimp xquartz`
-* Dev desktop apps: `postgres pgadmin4 postman docker intellij-idea`
-* Essential shell apps: `python3 jq z imagemagick icdiff`
-* Dev shell apps: `go glide node hub maven awscli bash mono`
+* Desktop apps (casks): 
+    * Essential: `google-chrome firefox spectacle atom telegram spotify istat-menus dropbox gimp gifox vlc discord slack`
+    * Dev: `intellij-idea visual-studio-code postgres pgadmin4 postman docker cyberduck`
+    * Utils: `omnidisksweeper dupeguru neofinder`
+    * Hobby: `guitar-pro reaper unity unity-hub`
+* Shell apps (formulas):
+    * Essential: `python3 jq z imagemagick icdiff wget`
+    * Dev: `go glide node hub maven awscli bash mono yarn`
 * Atom packages (`duplicate-removal plist-converter pretty-json sort-lines split-diff`)
 * Automatic copying of software dotfiles `.vimrc`
 * Automatic setup of iTerm2 preferences and profiles
