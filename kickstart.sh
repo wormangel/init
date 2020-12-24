@@ -40,7 +40,7 @@ brew tap homebrew/cask-versions
 # Install proper terminal - iterm2 and oh-my-zsh
 echo "❤️ Installing iTerm2 and oh-my-zsh..."
 echo
-brew cask install iterm2
+brew install --cask iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # TODO This will change the shell to oh-my-zsh and stop executing the rest of the script :( Split the files?
