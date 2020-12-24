@@ -1,11 +1,15 @@
 #!/usr/local/bin/bash
 set -e
 
+# config settings
+CODE_ROOT=~/workspace
+DOTFILE_REPO=$CODE_ROOT/init
+DOTFILE_REPO_GIT=git@github.com:wormangel/init.git
+
 echo "😍 Kickstarting new machine.."
 echo
 sleep 2
 
-INITDIR=~/workspace/wormangel/init
 # OSX Tweaks
 echo "🖱 Setting up OSX tweaks..."
 echo
@@ -66,9 +70,25 @@ echo
 # Clone repos with dotfiles
 echo "🐛 Creating workspace and cloning general init project..."
 echo
-mkdir ~/workspace
-git clone git@github.com:wormangel/init.git $INITDIR
-cp $INITDIR/.ssh/config ~/.ssh/config
+mkdir -p $CODE_ROOT
+git clone $DOTFILE_REPO_GIT $DOTFILE_REPO
+# Setup dotfiles
+echo "🎫 Copying dotfiles..."
+echo
+echo "This step will:"
+echo " * Copy .ssh/config to home"
+echo " * Copy .vimrc to home"
+echo " * Copy .zshrc to home"
+echo " * Copy iStats settings to home"
+echo " * Copy iTerm2 profiles to the appropriate place"
+echo "   * NOTE: iTerm2 preferences need to be loaded manually, check the final instructions."
+echo
+cp $DOTFILE_REPO/.ssh/config ~/.ssh/config
+cp $DOTFILE_REPO/.zshrc ~/
+cp $DOTFILE_REPO/.vimrc ~/
+cp $DOTFILE_REPO/istats.ismp ~/
+mkdir -p ~/Library/Application Support/iTerm2/DynamicProfiles
+cp $DOTFILE_REPO/iTerm2/profiles.json ~/Library/Application Support/iTerm2/DynamicProfiles
 
 # Install all needed software
 echo "⚙️ Installing all needed software..."
@@ -85,21 +105,6 @@ echo "⚛️ Installing Atom packages..."
 echo
 apm install duplicate-removal plist-converter pretty-json sort-lines split-diff
 
-# Setup dotfiles
-echo "🎫 Copying dotfiles..."
-echo
-echo "This step will:"
-echo " * Copy .vimrc to home"
-echo " * Copy .zshrc to home"
-echo " * Copy iStats settings to home"
-echo " * Copy iTerm2 profiles to the appropriate place"
-echo "   * NOTE: iTerm2 preferences need to be loaded manually, check the final instructions."
-echo
-cp $INITDIR/.zshrc ~/
-cp $INITDIR/.vimrc ~/
-cp $INITDIR/istats.ismp ~/
-mkdir -p ~/Library/Application Support/iTerm2/DynamicProfiles
-cp $INITDIR/iTerm2/profiles.json ~/Library/Application Support/iTerm2/DynamicProfiles
 
 
 echo "🎉 All done!"
@@ -136,7 +141,7 @@ echo "    · React Dev Tools > https://chrome.google.com/webstore/detail/react-d
 echo "    · Redux Dev Tools > https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd"
 echo
 echo " 💻 iTerm2:"
-echo "  ⚙️  Options > Preferences > General > Load preferences from a custom folder or URL > $INITDIR/iTerm2"
+echo "  ⚙️  Options > Preferences > General > Load preferences from a custom folder or URL > $DOTFILE_REPO/iTerm2"
 echo
 echo " 🌡  iStats Menus 6:"
 echo "  ⚙️  iStats Menus - Registration - Key can be found on Gmail under 'istats order'"
