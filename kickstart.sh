@@ -76,14 +76,16 @@ echo
 echo "WARNING: java8 is not available anymore with Homebrew due tue Oracle licensing bullshit."
 echo "Please manually download it and install from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"
 echo
-brew cask install google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker istat-menus dropbox xquartz gimp
-brew install python3 go glide node jq z imagemagick hub maven awscli bash icdiff mono
+brew install --cask google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker istat-menus dropbox xquartz gimp gifox cyberduck firefox vlc
+brew install --cask guitar-pro reaper omnidisksweeper neofinder unity unity-hub
+brew install python3 go glide node jq z imagemagick hub maven awscli bash icdiff mono bat wget yarn
+brew tap heroku/brew && brew install heroku
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE # Disable swipe navigation
 
 # Install Atom packages
 echo "⚛️ Installing Atom packages..."
 echo
-apm install duplicate-removal plist-converter pretty-json sort-lines split-diff
+apm install duplicate-removal plist-converter pretty-json sort-lines split-diff Delete-Whitelines pp-markdown rainbow-csv language-log language-yaml-cloudformation atom-html-preview
 
 # Setup dotfiles
 echo "🎫 Copying dotfiles..."
@@ -134,6 +136,7 @@ echo "    · EditThisCookie > https://chrome.google.com/webstore/detail/editthis
 echo "    · Copy All URLs > https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk"
 echo "    · React Dev Tools > https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi"
 echo "    · Redux Dev Tools > https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd"
+echo "    . Enhanced History > https://github.com/chrome-enhanced-history/enhanced-history"
 echo
 echo " 💻 iTerm2:"
 echo "  ⚙️  Options > Preferences > General > Load preferences from a custom folder or URL > $INITDIR/iTerm2"
