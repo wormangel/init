@@ -96,7 +96,7 @@ echo
 echo "WARNING: java8 is not available anymore with Homebrew due tue Oracle licensing bullshit."
 echo "Please manually download it and install from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"
 echo
-brew cask install google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker istat-menus dropbox xquartz gimp
+brew install --cask google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker istat-menus dropbox xquartz gimp
 brew install python3 go glide node jq z imagemagick hub maven awscli bash icdiff mono
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE # Disable swipe navigation
 
