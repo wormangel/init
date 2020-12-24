@@ -97,7 +97,7 @@ echo "WARNING: java8 is not available anymore with Homebrew due tue Oracle licen
 echo "Please manually download it and install from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"
 echo
 brew install --cask google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker istat-menus dropbox xquartz gimp gifox cyberduck firefox vlc
-brew install --cask guitar-pro reaper omnidisksweeper neofinder unity unity-hub
+brew install --cask guitar-pro reaper omnidisksweeper neofinder unity unity-hub discord slack visual-studio-code
 brew install python3 go glide node jq z imagemagick hub maven awscli bash icdiff mono bat wget yarn
 brew tap heroku/brew && brew install heroku
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE # Disable swipe navigation
